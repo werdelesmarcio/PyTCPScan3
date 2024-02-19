@@ -2,12 +2,6 @@ version: 1.0.{build}
 image:
 - Ubuntu1804
 - Ubuntu
-init:
-- sh: python3 PyTCPScan.py arg1 arg2 ar33
-environment:
-  arg1: google.com.br
-  arg2: 1
-  arg3: 100
 build:
   verbosity: minimal
 test_script:
