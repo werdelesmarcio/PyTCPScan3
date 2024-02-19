@@ -5,6 +5,8 @@
 
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_PyTCPScan3&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_PyTCPScan3)
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_PyTCPScan3&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_PyTCPScan3)
+
 # PyTCPScan (Version 3.0)
 _Repositório para a aplicação PyTCPScan._
 
