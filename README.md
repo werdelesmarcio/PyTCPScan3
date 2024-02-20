@@ -1,7 +1,8 @@
 
 ![Logo](https://i.ibb.co/S3WGFQk/Sem-t-tulo-removebg-preview.png)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/bf596a2940ddf3183bab/maintainability)](https://codeclimate.com/github/werdelesmarcio/PyTCPScan3/maintainability) [![Build status](https://ci.appveyor.com/api/projects/status/050o62vq1v03wv4c?svg=true)](https://ci.appveyor.com/project/werdelesmarcio/pytcpscan3) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_PyTCPScan3&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_PyTCPScan2) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_PyTCPScan3&metric=bugs)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_PyTCPScan3) ![GitHub License](https://img.shields.io/github/license/werdelesmarcio/PyTCPScan3)
+[![Maintainability](https://api.codeclimate.com/v1/badges/bf596a2940ddf3183bab/maintainability)](https://codeclimate.com/github/werdelesmarcio/PyTCPScan3/maintainability) [![Build status](https://ci.appveyor.com/api/projects/status/050o62vq1v03wv4c?svg=true)](https://ci.appveyor.com/project/werdelesmarcio/pytcpscan3)  [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_PyTCPScan3&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_PyTCPScan3)   [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_PyTCPScan3&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_PyTCPScan3)   [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=werdelesmarcio_PyTCPScan3&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=werdelesmarcio_PyTCPScan3)   ![GitHub License](https://img.shields.io/github/license/werdelesmarcio/PyTCPScan3)
+
 
 # PyTCPScan (Version 3.0)
 _Repositório para a aplicação PyTCPScan._
@@ -19,7 +20,7 @@ Estas são as instruções para que você tenha uma cópia do **PyTCPScan** em s
 Execute o download ou clone o repositório para a sua máquina e descompacte-o em um local de preferência.
 
 - _Não é necessário instalar o PyTCPScan._
-- _Para usar como executável, lembrar de dar permissão de execução (caso esteja usando uma Distribuição GNU/Linux._
+- _Para usar como executável, lembrar de dar permissão de execução (caso esteja usando uma Distribuição GNU/Linux)._
 - _Alterações no sistema para funcionalidade multiplataforma._
 
 ## Pré-Requisitos
