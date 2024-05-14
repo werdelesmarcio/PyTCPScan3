@@ -7,8 +7,6 @@
 import socket
 import sys
 from datetime import datetime
-import os
-import time
 
 from utils.banner import banner
 
@@ -17,9 +15,6 @@ pathfile = './utils/'
 if pathfile not in sys.path:
 	sys.path.append(pathfile)
 
-# Aguarda um tempo, após isso limpa a tela e chama o banner do programa
-time.sleep(8)
-os.system('cls' if os.name == 'nt' else 'clear')
 banner()
 
 """
@@ -55,7 +50,7 @@ def connect(target, port):
 # Iniciando o scan
 print (' [*] Connecting to Target: %s\n [*] Scanning ports between %s and %s ...' % (target, ip, fp))
 print ('')
-print (' [!] Please wait, scanning remote host', host)
+print (' [!] Please wait, scanning remote host', '\033[1;33m'+ host +'\033[m')
 print (' [*] This may take a while, be patient.')
 print ('')
 
@@ -67,8 +62,20 @@ try:
     for port in range(ip, fp+1):
         e = connect(target, port)
         if e == 1:
-            print (' [+] POSITIVE TO Port {}:	Status: OPEN'.format(port))
-	    
+            print (' [+] POSITIVE TO Port {}:	Status: \033[1;31mOPEN\033[m'.format(port))
+        else:
+             print (' [+] NEGATIVE TO Port {}:	Status: \033[1;33mCLOSE\033[m'.format(port))
+
+# Se o Host não pôde ser resolvido	
+except socket.gaierror:
+    print ('Hostname could not be resolved. Exiting')
+    sys.exit()
+
+# Se foi impossível conectar com o alvo	
+except socket.error:
+	print ('Could not connect to target')
+	sys.exit()
+
 # Se control+c for pressionado encerra a aplicação
 except KeyboardInterrupt:
     print('')
@@ -76,16 +83,6 @@ except KeyboardInterrupt:
     print(' The application has been stopped prematurely.')
     sys.exit()
 
-# Se o Host não pôde ser resolvido	
-except socket.gaierror:
-	print ('Hostname could not be resolved. Exiting')
-	sys.exit()
-
-# Se foi impossível conectar com o alvo	
-except socket.error:
-	print ('Could not connect to target')
-	sys.exit()
-	
 # Checa o termino do scan
 t2 = datetime.now()
 
